@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link href="./index.css" rel="stylesheet" />
+
+    <title>NFT preview card component</title>
+  </head>
+  <body
+    class="flex min-h-screen items-center justify-center bg-very-dark-blue-main-bg"
+  >
+    <article class="w-[20.44rem] rounded-2xl bg-very-dark-blue-card-bg p-6">
+      <div class="group relative mb-6 overflow-hidden rounded-lg">
+        <img src="./images/image-equilibrium.jpg" alt="Equilibrium Image" />
+        <div
+          class="absolute inset-0 flex cursor-pointer items-center justify-center bg-cyan bg-opacity-0 transition-opacity duration-300 group-hover:bg-opacity-50"
+        >
+          <img
+            class="opacity-0 group-hover:opacity-100"
+            src="images/icon-view.svg"
+            alt="View Icon"
+          />
+        </div>
+      </div>
+      <h1 class="mb-3 cursor-pointer font-semibold text-white hover:text-cyan">
+        Equilibrium #3429
+      </h1>
+      <p class="mb-4 font-light text-soft-blue">
+        Our Equilibrium collection promotes balance and calm.
+      </p>
+      <div class="mb-4 flex justify-between">
+        <div class="flex items-center gap-1.5">
+          <img src="./images/icon-ethereum.svg" alt="Ethereum Icon" />
+          <span class="text-base font-semibold text-cyan">0.041 ETH</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <img src="./images/icon-clock.svg" alt="Clock Icon" />
+          <span class="text-base font-normal text-soft-blue">3 days left</span>
+        </div>
+      </div>
+      <hr class="mb-4 border-[0.5px] border-solid border-very-dark-blue-line" />
+      <div class="flex">
+        <img class="w-8" src="./images/image-avatar.png" alt="Avatar Image" />
+        <p class="text-base font-normal text-soft-blue">
+          Creation of
+          <span class="cursor-pointer text-white hover:text-cyan">
+            Jules Wyvern
+          </span>
+        </p>
+      </div>
+    </article>
+  </body>
+</html>
